@@ -1,0 +1,64 @@
+:root {
+      --bg: #F3F3E0;
+      --user_font_color: #183B4E;
+      --text: #27548A;
+      --highlight: #DDA853;
+    }
+@keyframes pop {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+#currentVowels.pop {
+    animation: pop 0.3s ease;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--user_font_color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+input {
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 2px solid var(--text);
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    outline: none;
+    color: var(--user_font_color);
+    background: white;
+}
+
+#currentVowels {
+    margin-top: 20px;
+    font-size: 1.2em;
+    background: var(--highlight);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    font-weight: bold;
+}
+
+small {
+    margin-top: 10px;
+    color: var(--text);
+    font-size: 0.85em;
+}
